@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, follow">
+  <title>Dziękuję za kontakt — MAVVKO</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .thanks-page .header {
+      position: relative;
+      background: #03080e;
+    }
+
+    #confirmation {
+      min-height: calc(100vh - 170px);
+      display: grid;
+      place-items: center;
+      padding: 70px 0;
+      background: #05090f;
+      color: #fff;
+      text-align: center;
+    }
+
+    .confirmation-content {
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .confirmation-content small {
+      color: var(--blue);
+      font-weight: 800;
+      letter-spacing: .2em;
+    }
+
+    .confirmation-content h1 {
+      margin: 15px 0;
+      font-size: clamp(36px, 6vw, 60px);
+      line-height: 1.05;
+    }
+
+    .confirmation-content p {
+      margin: 0 auto 28px;
+      max-width: 520px;
+      color: #c5d0da;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 700px) {
+      #confirmation { min-height: calc(100vh - 150px); padding: 55px 0; }
+      .confirmation-content p { font-size: 15px; }
+    }
+  </style>
+</head>
+<body class="thanks-page">
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="MAVVKO — strona główna">
+        <img src="assets/logo-mavvko.png" alt="MAVVKO">
+      </a>
+      <nav aria-label="Nawigacja główna">
+        <a href="index.html#start">Home</a>
+        <a href="index.html#oferta">Oferta</a>
+        <a href="index.html#realizacje">Realizacje</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <a class="top-button" href="index.html#kontakt">ZAPYTAJ O WYCENĘ <b>→</b></a>
+    </div>
+  </header>
+
+  <main>
+    <section id="confirmation">
+      <div class="container confirmation-content">
+        <small>WIADOMOŚĆ WYSŁANA</small>
+        <h1>Dziękuję za kontakt!</h1>
+        <p>Twoja wiadomość dotarła. Odezwę się do Ciebie najszybciej, jak to możliwe.</p>
+        <a class="button primary" href="index.html">Wróć na stronę główną</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="current-year"></span> MAVVKO</span>
+      <span aria-hidden="true">|</span>
+      <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
