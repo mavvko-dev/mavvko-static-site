@@ -650,7 +650,19 @@ html, body{
     padding:75px 0;
   }
 }
+.contact-email {
+  margin: 14px 0 0;
+  color: #596775;
+}
 
+.contact-email a {
+  color: #0788ff;
+  font-weight: 600;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
 /* Very narrow phones */
 @media (max-width: 380px){
   .hero{
@@ -717,6 +729,15 @@ html, body{
     max-width: none;
     justify-self: stretch;
   }
+
+    .nav {
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
 }
 /* Finalne poprawki responsywne dla wąskich ekranów */
 @media (max-width: 767px) {
